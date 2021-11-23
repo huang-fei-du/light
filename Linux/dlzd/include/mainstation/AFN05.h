@@ -1,19 +1,20 @@
 /*************************************************
 Copyright,2006,LongTong co.,LTD
-ÎÄ¼şÃû£ºAFN05.h
-×÷Õß£ºleiyong
-°æ±¾£º0.9
-Íê³ÉÈÕÆÚ:2006Äê6ÔÂ ÈÕ
-ÃèÊö£ºÖ÷Õ¾¡°¿ØÖÆÃüÁî(AFN05)¡±Í·ÎÄ¼ş
-ĞŞ¸ÄÀúÊ·£º
+æ–‡ä»¶åï¼šAFN05.h
+ä½œè€…ï¼šleiyong
+ç‰ˆæœ¬ï¼š0.9
+å®Œæˆæ—¥æœŸ:2006å¹´6æœˆ æ—¥
+æè¿°ï¼šä¸»ç«™â€œæ§åˆ¶å‘½ä»¤(AFN05)â€å¤´æ–‡ä»¶
+ä¿®æ”¹å†å²ï¼š
   01,06-6-26,leiyong created.
+  just a test
 **************************************************/
 #ifndef __AFN05H
 #define __AFN05H
 
 #include "common.h"
 
-extern INT8U  ctrlCmdWaitTime;              //ÊÕµ½¿ØÖÆÃüÁîÏÔÊ¾Í£ÁôÊ±¼ä
+extern INT8U  ctrlCmdWaitTime;              //æ”¶åˆ°æ§åˆ¶å‘½ä»¤æ˜¾ç¤ºåœç•™æ—¶é—´
 
 
 void AFN05(INT8U *pDataHead, INT8U *pDataEnd, INT8U dataFrom);
@@ -39,7 +40,7 @@ BOOL AFN05026(INT8U *pHandle, INT8U fn);
 BOOL AFN05027(INT8U *pHandle, INT8U fn);
 BOOL AFN05028(INT8U *pHandle, INT8U fn);
 BOOL AFN05029(INT8U *pHandle, INT8U fn);
-BOOL AFN05030(INT8U *pHandle, INT8U fn);    //ÖÕ¶ËÍ¶ÔË(ÖØÇì¹æÔ¼)
+BOOL AFN05030(INT8U *pHandle, INT8U fn);    //ç»ˆç«¯æŠ•è¿(é‡åº†è§„çº¦)
 
 BOOL AFN05031(INT8U *pHandle, INT8U fn);
 BOOL AFN05032(INT8U *pHandle, INT8U fn);
@@ -50,14 +51,14 @@ BOOL AFN05035(INT8U *pHandle, INT8U fn);
 BOOL AFN05036(INT8U *pHandle, INT8U fn);
 BOOL AFN05037(INT8U *pHandle, INT8U fn);
 
-BOOL AFN05040(INT8U *pHandle, INT8U fn);    //ÖÕ¶ËÍË³öÔËĞĞ(ÖØÇì¹æÔ¼)
+BOOL AFN05040(INT8U *pHandle, INT8U fn);    //ç»ˆç«¯é€€å‡ºè¿è¡Œ(é‡åº†è§„çº¦)
 
 BOOL AFN05049(INT8U *pHandle, INT8U fn);
 BOOL AFN05050(INT8U *pHandle, INT8U fn);
 BOOL AFN05051(INT8U *pHandle, INT8U fn);
 BOOL AFN05052(INT8U *pHandle, INT8U fn);
 BOOL AFN05053(INT8U *pHandle, INT8U fn);
-BOOL AFN05054(INT8U *pHandle, INT8U fn);    //ÃüÁîÆô¶¯ËÑ±í
+BOOL AFN05054(INT8U *pHandle, INT8U fn);    //å‘½ä»¤å¯åŠ¨æœè¡¨
 
 BOOL AFN05066(INT8U *pHandle, INT8U fn);
 
