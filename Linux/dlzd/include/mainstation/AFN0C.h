@@ -1,0 +1,191 @@
+/*************************************************
+Copyright,2006,LongTong co.,LTD
+文件名：AFN0C.h
+作者：leiyong
+版本：0.9
+完成日期:2006年5月 日
+描述：主站"请求一类数据(AFN0C)"头文件
+修改历史：
+  01,06-05-28,leiyong created.
+**************************************************/
+#ifndef __AFN0CH
+#define __AFN0CH
+
+#include "common.h"
+
+//函数声明
+INT8U     numOfTariff(INT16U pn);
+DATE_TIME queryCopyTime(INT16U pn);
+
+//组1
+INT16U AFN0C001(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+INT16U AFN0C002(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C003(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C004(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C005(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C006(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C007(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C008(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组2
+INT16U AFN0C009(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C010(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+INT16U AFN0C011(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+INT16U AFN0C014(INT16U frameTail,INT8U *pHandle, INT8U fn);   //重庆规约
+INT16U AFN0C015(INT16U frameTail,INT8U *pHandle, INT8U fn);   //重庆规约
+INT16U AFN0C016(INT16U frameTail,INT8U *pHandle, INT8U fn);   //重庆规约
+
+//组3
+INT16U AFN0C017(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C018(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C019(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C020(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C021(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C022(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C023(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C024(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组4
+INT16U AFN0C025(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C026(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C027(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C028(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C029(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C030(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C031(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C032(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组5
+INT16U AFN0C033(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C034(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C035(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C036(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C037(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C038(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C039(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C040(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组6
+INT16U AFN0C041(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C042(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C043(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C044(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C045(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C046(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C047(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C048(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组7
+INT16U AFN0C049(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组8
+INT16U AFN0C057(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C058(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组9
+INT16U AFN0C065(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C066(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C067(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组10
+INT16U AFN0C073(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组11
+INT16U AFN0C081(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C082(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C083(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C084(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组12
+INT16U AFN0C089(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C090(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C091(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C092(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C093(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C094(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C095(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C096(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组13
+INT16U AFN0C097(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C098(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C099(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C100(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C101(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C102(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C103(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组14
+INT16U AFN0C105(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C106(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C107(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C108(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C109(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C110(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C111(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C112(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组15
+INT16U AFN0C113(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C114(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C115(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C116(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组16
+INT16U AFN0C121(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组17
+INT16U AFN0C129(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C130(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C131(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C132(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C133(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C134(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C135(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C136(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组18
+INT16U AFN0C137(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C138(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C139(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C140(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C141(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C142(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C143(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C144(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组19
+INT16U AFN0C145(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C146(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C147(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C148(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C149(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C150(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C151(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C152(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组20
+INT16U AFN0C153(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C154(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C155(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C156(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C157(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C158(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C159(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C160(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组21
+INT16U AFN0C161(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C165(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C166(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C167(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C168(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+//组22
+INT16U AFN0C169(INT16U frameTail,INT8U *pHandle, INT8U fn);
+INT16U AFN0C170(INT16U frameTail,INT8U *pHandle, INT8U fn);
+
+#endif  /*__AFN0CH*/

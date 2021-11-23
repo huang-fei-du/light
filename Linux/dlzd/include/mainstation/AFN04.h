@@ -1,0 +1,123 @@
+/*************************************************
+Copyright,2006,LongTong co.,LTD
+文件名：AFN04.h
+作者：leiyong
+版本：0.9
+完成日期:2006年5月 日
+描述：主站“设置参数(AFN04)”头文件
+修改历史：
+  01,06-05-28,leiyong created.
+**************************************************/
+#ifndef __AFN04H
+#define __AFN04H
+
+#include "common.h"
+
+void AFN04(INT8U *pDataHead, INT8U *pDataEnd, INT8U dataFrom);
+BOOL AFN04001(INT8U *pData);
+BOOL AFN04002(INT8U *pData);
+BOOL AFN04003(INT8U *pData);
+BOOL AFN04004(INT8U *pData);
+BOOL AFN04005(INT8U *pData);
+BOOL AFN04006(INT8U *pData);
+BOOL AFN04007(INT8U *pData);
+BOOL AFN04008(INT8U *pData);
+BOOL AFN04009(INT8U *pData);
+BOOL AFN04010(INT8U *pData);
+BOOL AFN04011(INT8U *pData);
+BOOL AFN04012(INT8U *pData);
+BOOL AFN04013(INT8U *pData);
+BOOL AFN04014(INT8U *pData);
+BOOL AFN04015(INT8U *pData);
+BOOL AFN04016(INT8U *pData);
+BOOL AFN04017(INT8U *pData);
+BOOL AFN04018(INT8U *pData);
+BOOL AFN04019(INT8U *pData);
+BOOL AFN04020(INT8U *pData);
+BOOL AFN04021(INT8U *pData);
+BOOL AFN04022(INT8U *pData);
+BOOL AFN04023(INT8U *pData);
+
+BOOL AFN04025(INT8U *pData);
+BOOL AFN04026(INT8U *pData);
+BOOL AFN04027(INT8U *pData);
+BOOL AFN04028(INT8U *pData);
+
+BOOL AFN04029(INT8U *pData);
+BOOL AFN04030(INT8U *pData);
+BOOL AFN04031(INT8U *pData);
+
+BOOL AFN04033(INT8U *pData);
+
+BOOL AFN04034(INT8U *pData);
+BOOL AFN04035(INT8U *pData);
+BOOL AFN04036(INT8U *pData);
+BOOL AFN04037(INT8U *pData);
+BOOL AFN04038(INT8U *pData);
+BOOL AFN04039(INT8U *pData);
+
+BOOL AFN04041(INT8U *pData);
+BOOL AFN04042(INT8U *pData);
+BOOL AFN04043(INT8U *pData);
+BOOL AFN04044(INT8U *pData);
+BOOL AFN04045(INT8U *pData);
+BOOL AFN04046(INT8U *pData);
+BOOL AFN04047(INT8U *pData);
+BOOL AFN04048(INT8U *pData);
+
+BOOL AFN04049(INT8U *pData);
+BOOL AFN04050(INT8U *pData);
+BOOL AFN04051(INT8U *pData);
+BOOL AFN04052(INT8U *pData);
+BOOL AFN04053(INT8U *pData);        //2017-06-28,Add
+BOOL AFN04054(INT8U *pData);        //2018-07-10,Add
+BOOL AFN04055(INT8U *pData);        //2018-07-10,Add
+
+BOOL AFN04057(INT8U *pData);
+BOOL AFN04058(INT8U *pData);
+BOOL AFN04059(INT8U *pData);
+BOOL AFN04060(INT8U *pData);
+BOOL AFN04061(INT8U *pData);
+//BOOL AFN04062(INT8U *pData);
+
+BOOL AFN04065(INT8U *pData);
+BOOL AFN04066(INT8U *pData);
+BOOL AFN04067(INT8U *pData);
+BOOL AFN04068(INT8U *pData);
+
+BOOL AFN04073(INT8U *pData);
+BOOL AFN04074(INT8U *pData);
+BOOL AFN04075(INT8U *pData);
+BOOL AFN04076(INT8U *pData);
+
+BOOL AFN04081(INT8U *pData);
+BOOL AFN04082(INT8U *pData);
+BOOL AFN04083(INT8U *pData);
+
+
+//规约扩展
+#ifdef SDDL_CSM
+
+BOOL AFN04088(INT8U *pData);    //电能表资产编号,山东版
+BOOL AFN04224(INT8U *pData);    //山东版,终端地址码
+
+#endif
+
+BOOL AFN04097(INT8U *pData);    //终端名称
+BOOL AFN04098(INT8U *pData);    //系统运行标识(Q/GDW_129_2005是终端ID)
+BOOL AFN04099(INT8U *pData);    //终端抄表搜索持续时间
+BOOL AFN04100(INT8U *pData);    //终端预设APN
+BOOL AFN04121(INT8U *pData);    //终端地址及行政区划码(扩展)
+BOOL AFN04129(INT8U *pData);    //交流采样装置校正
+
+BOOL AFN04131(INT8U *pData);    //读取校表数据值
+BOOL AFN04133(INT8U *pData);    //载波/无线主节点地址
+BOOL AFN04134(INT8U *pData);    //设备编号
+BOOL AFN04135(INT8U *pData);    //锐拔模块参数
+BOOL AFN04136(INT8U *pData);    //厂商信息
+BOOL AFN04137(INT8U *pData);    //脉冲底数
+BOOL AFN04138(INT8U *pData);    //居民用户表数据类型
+
+BOOL AFN04099(INT8U *pData);    //终端预设APN
+
+#endif  /*__AFN04H*/
