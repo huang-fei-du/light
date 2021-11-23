@@ -8,6 +8,7 @@ Copyright,2006,LongTong co.,LTD
 修改历史：
   01,06-6-26,leiyong created.
   just a test
+  test one more
 **************************************************/
 #ifndef __AFN05H
 #define __AFN05H
